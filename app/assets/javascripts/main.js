@@ -1,11 +1,9 @@
 $(function() {
-  console.log("Document ready.");
   var coffeeShops = [];
 
   // Event listener for submit button.
   $('[type=submit]').on("click", function(evt) {
     evt.preventDefault();
-    console.log("Button clicked.");
 
     // Clear list of coffee shops if necessary.
     $('#list').html('');
@@ -15,7 +13,6 @@ $(function() {
 
     // Clear form inputs.
     $('form').trigger('reset');
-
    });
 
 
@@ -43,7 +40,6 @@ $(function() {
       // Reformat latitude and longitude for FourSquare's API.
       latlong = latitude + ',' + longitude;
 
-      console.log(latlong);
     }).then(function() {
 
       // Retrieve 10 coffee shops using FourSquare's Venue Search API.
