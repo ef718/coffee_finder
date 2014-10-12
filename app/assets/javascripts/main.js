@@ -24,7 +24,6 @@ $(function() {
 
     // Reformat data for Google's Geocoding API.
     var reformattedAddress = enteredAddress.split(' ').join('+');
-    console.log(reformattedAddress);
 
     // Retrieve coordinates for address using Geocoding API.
     var latitude = '';
