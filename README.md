@@ -1,28 +1,19 @@
-== README
+Coffee Finder
+=========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Coffee Finder** is a coffee shop locator. Enter your current street address to find nearby coffee shops. Coffee Finder was developed as a Rails project in October of 2014.
 
-Things you may want to cover:
+Click on the link below to begin!
 
-* Ruby version
+[Visit Coffee Finder](http://coffeefinder.com)
 
-* System dependencies
+Technologies Used
+----
 
-* Configuration
+  - Ruby 2.1.1
+  - Ruby on Rails 4.1.1
+  - The Google Geocoding API
+  - The Foursquare API
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+---
+###### Written by Elaine Fang
