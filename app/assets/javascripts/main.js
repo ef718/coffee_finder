@@ -42,10 +42,8 @@ $(function() {
     }).then(function() {
 
       // Retrieve 10 coffee shops using FourSquare's Venue Search API.
-      var url = 'https://api.foursquare.com/v2/venues/search?client_id=4YTT5GDS35ESCRRB1RT500AZEUSXK2KRPI3YELXLJTQBRQS0&client_secret=SGJ4YO3LOEPKALUV01SA11GDSF1LUUVRBNLCZ1Q52JNPW2RE&v=20141011&ll=' + latlong + '&query=coffee&limit=10';
-      console.log(url);
+      var url = 'https://api.foursquare.com/v2/venues/search?categoryId=4bf58dd8d48988d1e0931735&radius=5000&intent=checkin&ll=' + latlong + '&client_id=4YTT5GDS35ESCRRB1RT500AZEUSXK2KRPI3YELXLJTQBRQS0&client_secret=SGJ4YO3LOEPKALUV01SA11GDSF1LUUVRBNLCZ1Q52JNPW2RE&v=20141012&limit=50';
       $.get(url, function(data) {
-        console.log(data);
         coffeeShops = data["response"]["venues"];
 
       }).then(function() {
@@ -63,7 +61,7 @@ $(function() {
 
         // Append coffee shops to page.
         $('#list').append('<h2>Nearby Coffee Shops:</h2>');
-        for (var i = 0; i < sortedCoffeeShops.length; i++) {
+        for (var i = 0; i < 10; i++) {
           var shopName = sortedCoffeeShops[i]["name"];
           var shopAddress = sortedCoffeeShops[i]["location"]["formattedAddress"];
           var html = '<div class="shop"><h3>' + shopName + '</h3><p>' + shopAddress[0] + '</p><p>' + shopAddress[1] + '</p></div>';
