@@ -5,7 +5,7 @@ Coffee Finder
 
 Click on the link below to begin!
 
-[Visit Coffee Finder](http://coffeefinder.com)
+[Visit Coffee Finder](http://coffeefinder.herokuapp.com)
 
 Technologies Used
 ----
