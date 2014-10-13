@@ -52,7 +52,7 @@ $(function() {
         var sortedCoffeeShops = coffeeShops.sort(function (a, b) {
           if (a.location.distance > b.location.distance) {
             return 1;
-          } else if (a.location.distance > b.location.distance) {
+          } else if (a.location.distance < b.location.distance) {
             return -1;
           } else {
             return 0;
